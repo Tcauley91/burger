@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tcauley91/burger.git"
+    "url": "https://github.com/Tcauley91/burger"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tcauley91/burger/issues"
+    "url": "https://github.com/Tcauley91/burger"
   },
   "homepage": "https://github.com/Tcauley91/burger#readme",
   "dependencies": {
