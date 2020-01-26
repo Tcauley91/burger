@@ -2,7 +2,7 @@ body{
   background : goldenrod;
 }
 
-.burgerimg{
+#burgerimg{
   height: 300px;
   width: 300px;
 }
