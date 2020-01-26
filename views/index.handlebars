@@ -11,26 +11,28 @@
   {{!-- Burger columns --}}
 <div class="row justify-content-center">
     <div class="col-4">
-       <ol>
+       <ol class="notdevouredlist">
         {{#each burgers}}
           {{#unless devoured}}
-            {{> burgers/burger-block devour=true}}
+            <li>
+              {{burger_name}}
+	          </li> 
+              <button class="devour" data-id="{{id}}"> Devour Burger!</button>
           {{/unless}}
         {{/each}}
       </ol></div>
     <div class="col-4">
-     <ol>
+     <ol class="devouredlist">
         {{#each burgers}}
           {{#if devoured}}
-            {{> burgers/burger-block devour=false}}
+           <li id="devouredlist">
+              {{burger_name}}
+	          </li> 
           {{/if}}
         {{/each}}
       </ol>
     </div>
   </div>
-
-    
- 
   <div class="row" id="headercont">
     <div class="col-md-6">
      <form class="create-form">

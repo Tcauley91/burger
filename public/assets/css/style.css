@@ -20,7 +20,6 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
 }
 
 .form-group {
@@ -34,5 +33,13 @@ h2 {
 }
 
 #headercont{
-margin-left: 800px;
+margin-left: 600px;
+}
+
+.devouredlist{
+  background: red
+}
+
+#devouredlist{
+  background: red
 }

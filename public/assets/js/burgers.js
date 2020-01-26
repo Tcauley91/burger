@@ -4,16 +4,12 @@
 $(function() {
   $(".devour").on("click", function(event) {
     let id = $(this).data("id");
-    let newDevoured = $(this).data("newdevoured");
-
-    let newDevouredBurger = {
-      devoured: newDevoured
-    };
+    let newDevoured = {devoured: true};
 
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: newDevouredBurger
+      data: newDevoured
     }).then(
       function() {
         console.log("changed devour to", newDevoured);
@@ -39,21 +35,6 @@ $(function() {
     }).then(
       function() {
         console.log("created new Burger");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });
-
-  $(".delete-burger").on("click", function(event) {
-    let id = $(this).data("id");
-
-    // Send the DELETE request.
-    $.ajax("/api/burgers/" + id, {
-      type: "DELETE"
-    }).then(
-      function() {
-        console.log("deleted burger", id);
         // Reload the page to get the updated list
         location.reload();
       }
