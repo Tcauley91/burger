@@ -3,10 +3,10 @@
 
 $(function() {
   $(".devour").on("click", function(event) {
-    var id = $(this).data("id");
-    var newDevoured = $(this).data("newdevoured");
+    let id = $(this).data("id");
+    let newDevoured = $(this).data("newdevoured");
 
-    var newDevouredBurger = {
+    let newDevouredBurger = {
       devoured: newDevoured
     };
 
@@ -27,7 +27,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newBurger = {
+    let newBurger = {
       burger_name: $("#bu").val().trim(),
       // sleepy: $("[name=sleepy]:checked").val().trim()
     };
@@ -46,7 +46,7 @@ $(function() {
   });
 
   $(".delete-burger").on("click", function(event) {
-    var id = $(this).data("id");
+    let id = $(this).data("id");
 
     // Send the DELETE request.
     $.ajax("/api/burgers/" + id, {
