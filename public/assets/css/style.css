@@ -2,6 +2,11 @@ body{
   background : goldenrod;
 }
 
+.burgerimg{
+  height: 300px;
+  width: 300px;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -19,5 +24,15 @@ li {
 }
 
 .form-group {
+  width:400px;
   margin-bottom: 5px;
+  margin-right: 200px
+}
+
+h2 {
+  color: red
+}
+
+#headercont{
+margin-left: 800px;
 }
